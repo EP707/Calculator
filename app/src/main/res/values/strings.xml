@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="display_calc">50</string>
+    <string name="result_calc">result</string>
+    <string name="cgpa_ac">CGPA</string>
+    <string name="saved_ac">Saved</string>
+</resources>
