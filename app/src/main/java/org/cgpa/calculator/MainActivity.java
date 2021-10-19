@@ -69,107 +69,131 @@ public class MainActivity extends AppCompatActivity {
         btnadd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ACTION = "+";
-                if(!Double.isNaN(value1)){
-                    value2 = Double.parseDouble(disp.getText().toString());
-                    value1 = value1 + value2;
-                } else {
-                    value1 = Double.parseDouble(disp.getText().toString());
+                try {
+                    ACTION = "+";
+                    if(!Double.isNaN(value1)){
+                        value2 = Double.parseDouble(disp.getText().toString());
+                        value1 = value1 + value2;
+                    } else {
+                        value1 = Double.parseDouble(disp.getText().toString());
+                    }
+                    result.setText(value1 + "+");
+                    disp.setText(null);
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
                 }
-                result.setText(value1 + "+");
-                disp.setText(null);
             }
         });
 
         btnminus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ACTION = "-";
-                if(!Double.isNaN(value1)){
-                    value2 = Double.parseDouble(disp.getText().toString());
-                    value1 = value1 - value2;
-                } else {
-                    value1 = Double.parseDouble(disp.getText().toString());
+                try {
+                    ACTION = "-";
+                    if(!Double.isNaN(value1)){
+                        value2 = Double.parseDouble(disp.getText().toString());
+                        value1 = value1 - value2;
+                    } else {
+                        value1 = Double.parseDouble(disp.getText().toString());
+                    }
+                    result.setText(value1 + "-");
+                    disp.setText(null);
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
                 }
-                result.setText(value1 + "-");
-                disp.setText(null);
             }
         });
 
         btnmul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ACTION = "*";
-                if(!Double.isNaN(value1)){
-                    value2 = Double.parseDouble(disp.getText().toString());
-                    value1 = value1 * value2;
-                } else {
-                    value1 = Double.parseDouble(disp.getText().toString());
+                try {
+                    ACTION = "*";
+                    if(!Double.isNaN(value1)){
+                        value2 = Double.parseDouble(disp.getText().toString());
+                        value1 = value1 * value2;
+                    } else {
+                        value1 = Double.parseDouble(disp.getText().toString());
+                    }
+                    result.setText(value1 + "*");
+                    disp.setText(null);
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
                 }
-                result.setText(value1 + "*");
-                disp.setText(null);
             }
         });
 
         btndivide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ACTION = "/";
-                if(!Double.isNaN(value1)){
-                    value2 = Double.parseDouble(disp.getText().toString());
-                    value1 = value1 / value2;
-                } else {
-                    value1 = Double.parseDouble(disp.getText().toString());
+                try {
+                    ACTION = "/";
+                    if(!Double.isNaN(value1)){
+                        value2 = Double.parseDouble(disp.getText().toString());
+                        value1 = value1 / value2;
+                    } else {
+                        value1 = Double.parseDouble(disp.getText().toString());
+                    }
+                    result.setText(value1 + "/");
+                    disp.setText(null);
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
                 }
-                result.setText(value1 + "/");
-                disp.setText(null);
             }
         });
 
         btnmodules.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ACTION = "%";
-                if(!Double.isNaN(value1)){
-                    value2 = Double.parseDouble(disp.getText().toString());
-                    value1 = value1 % value2;
-                } else {
-                    value1 = Double.parseDouble(disp.getText().toString());
+                try {
+                    ACTION = "%";
+                    if(!Double.isNaN(value1)){
+                        value2 = Double.parseDouble(disp.getText().toString());
+                        value1 = value1 % value2;
+                    } else {
+                        value1 = Double.parseDouble(disp.getText().toString());
+                    }
+                    result.setText(value1 + "%");
+                    disp.setText(null);
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
                 }
-                result.setText(value1 + "%");
-                disp.setText(null);
             }
         });
 
         btnequal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (ACTION != null && ACTION.equals("+")) {
-                    double res = value1 + Double.parseDouble(disp.getText().toString());
-                    disp.setText(null);
-                    result.setText(String.valueOf(res));
-                } else if (ACTION != null && ACTION.equals("-")) {
-                    double res = value1 - Double.parseDouble(disp.getText().toString());
-                    disp.setText(null);
-                    result.setText(String.valueOf(res));
-                } else if (ACTION != null && ACTION.equals("*")) {
-                    double res = value1 * Double.parseDouble(disp.getText().toString());
-                    disp.setText(null);
-                    result.setText(String.valueOf(res));
-                } else if (ACTION != null && ACTION.equals("/")) {
-                    double res = value1 / Double.parseDouble(disp.getText().toString());
-                    disp.setText(null);
-                    result.setText(String.valueOf(res));
-                } else if (ACTION != null && ACTION.equals("%")) {
-                    double res = value1 % Double.parseDouble(disp.getText().toString());
-                    disp.setText(null);
-                    result.setText(String.valueOf(res));
+                try {
+                    if (ACTION != null && ACTION.equals("+")) {
+                        double res = value1 + Double.parseDouble(disp.getText().toString());
+                        disp.setText(null);
+                        result.setText(String.valueOf(res));
+                    } else if (ACTION != null && ACTION.equals("-")) {
+                        double res = value1 - Double.parseDouble(disp.getText().toString());
+                        disp.setText(null);
+                        result.setText(String.valueOf(res));
+                    } else if (ACTION != null && ACTION.equals("*")) {
+                        double res = value1 * Double.parseDouble(disp.getText().toString());
+                        disp.setText(null);
+                        result.setText(String.valueOf(res));
+                    } else if (ACTION != null && ACTION.equals("/")) {
+                        double res = value1 / Double.parseDouble(disp.getText().toString());
+                        disp.setText(null);
+                        result.setText(String.valueOf(res));
+                    } else if (ACTION != null && ACTION.equals("%")) {
+                        double res = value1 % Double.parseDouble(disp.getText().toString());
+                        disp.setText(null);
+                        result.setText(String.valueOf(res));
+                    }
+
+
+                    ACTION = null;
+                    value1 = Double.NaN;
+                    disp.setSelection(disp.getText().length());
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
                 }
-
-
-                ACTION = null;
-                value1 = Double.NaN;
-                disp.setSelection(disp.getText().length());
             }
         });
 

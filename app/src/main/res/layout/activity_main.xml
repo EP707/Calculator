@@ -7,12 +7,6 @@
     android:background="@drawable/background"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/background"
-        />
-
     <EditText
         android:id="@+id/calc_display"
         android:layout_width="match_parent"
@@ -24,6 +18,7 @@
         android:hint="@string/display_calc"
         android:inputType="number"
         android:paddingEnd="40dp"
+        android:paddingStart="50dp"
         android:textAlignment="textEnd"
         android:textColor="@color/black"
         android:textColorHint="#68000000"
@@ -46,6 +41,7 @@
         android:elevation="25dp"
         android:hint="Result"
         android:paddingEnd="30dp"
+        android:paddingStart="40dp"
         android:textAlignment="textEnd"
         android:textColor="@color/black"
         android:textColorHint="#65000000"
@@ -65,7 +61,7 @@
         android:elevation="20dp"
         android:text="Del"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.355"
@@ -81,7 +77,7 @@
         android:elevation="20dp"
         android:text="C"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_divide"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.849"
@@ -97,10 +93,10 @@
         android:elevation="20dp"
         android:text="7"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calc_result"
         app:layout_constraintVertical_bias="0.227" />
@@ -113,7 +109,7 @@
         android:elevation="20dp"
         android:text="8"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.354"
@@ -129,7 +125,7 @@
         android:elevation="20dp"
         android:text="9"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.645"
@@ -145,7 +141,7 @@
         android:elevation="20dp"
         android:text="/"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.949"
@@ -161,7 +157,7 @@
         android:elevation="20dp"
         android:text="4"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
@@ -177,7 +173,7 @@
         android:elevation="20dp"
         android:text="5"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.354"
@@ -190,7 +186,7 @@
         android:layout_width="75dp"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
-        android:elevation="20dp"
+        android:elevation="20sp"
         android:text="6"
         android:textColor="@color/white"
         android:textSize="20dp"
@@ -206,7 +202,7 @@
         android:layout_width="75dp"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
-        android:elevation="20dp"
+        android:elevation="20sp"
         android:text="*"
         android:textColor="@color/white"
         android:textSize="20dp"
@@ -225,13 +221,13 @@
         android:elevation="20dp"
         android:text="1"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.624" />
+        app:layout_constraintVertical_bias="0.622" />
 
     <Button
         android:id="@+id/btn2"
@@ -241,7 +237,7 @@
         android:elevation="20dp"
         android:text="2"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.354"
@@ -257,7 +253,7 @@
         android:elevation="20dp"
         android:text="3"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.645"
@@ -272,13 +268,13 @@
         android:background="@drawable/button"
         android:text="-"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.949"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.624" />
+        app:layout_constraintVertical_bias="0.623" />
 
     <Button
         android:id="@+id/btndot"
@@ -287,13 +283,13 @@
         android:background="@drawable/button"
         android:text="."
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.717" />
+        app:layout_constraintVertical_bias="0.715" />
 
     <Button
         android:id="@+id/btn0"
@@ -302,13 +298,13 @@
         android:background="@drawable/button"
         android:text="0"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.354"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.717" />
+        app:layout_constraintVertical_bias="0.715" />
 
     <Button
         android:id="@+id/btnModules"
@@ -317,13 +313,13 @@
         android:background="@drawable/button"
         android:text="%"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.645"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.717" />
+        app:layout_constraintVertical_bias="0.715" />
 
     <Button
         android:id="@+id/btnEqual"
@@ -332,7 +328,7 @@
         android:background="@drawable/button"
         android:text="="
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.877"
@@ -347,13 +343,13 @@
         android:background="@drawable/button"
         android:text="+"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.949"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.717" />
+        app:layout_constraintVertical_bias="0.715" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
